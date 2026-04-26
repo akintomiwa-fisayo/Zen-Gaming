@@ -1,0 +1,241 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  --background: #F5F3F0;
+  --foreground: #3E4A4F;
+  --card: #FFFFFF;
+  --card-foreground: #3E4A4F;
+  --popover: #FFFFFF;
+  --popover-foreground: #3E4A4F;
+  --primary: #8FA883;
+  --primary-foreground: #FFFFFF;
+  --secondary: #E8DCC4;
+  --secondary-foreground: #3E4A4F;
+  --muted: #DED8D0;
+  --muted-foreground: #6B7B84;
+  --accent: #9CAF88;
+  --accent-foreground: #FFFFFF;
+  --destructive: #D77A61;
+  --destructive-foreground: #FFFFFF;
+  --border: rgba(156, 175, 136, 0.2);
+  --input: transparent;
+  --input-background: #FAFAF8;
+  --switch-background: #DED8D0;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: rgba(143, 168, 131, 0.3);
+  --chart-1: #8FA883;
+  --chart-2: #9CAF88;
+  --chart-3: #E8DCC4;
+  --chart-4: #5C6F7A;
+  --chart-5: #B8C5B4;
+  --radius: 0.625rem;
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #3E4A4F;
+  --sidebar-primary: #8FA883;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #F5F3F0;
+  --sidebar-accent-foreground: #3E4A4F;
+  --sidebar-border: rgba(156, 175, 136, 0.15);
+  --sidebar-ring: rgba(143, 168, 131, 0.3);
+
+  --sage-green: #8FA883;
+  --sage-green-light: #9CAF88;
+  --sage-green-dark: #7A9370;
+  --latte: #E8DCC4;
+  --latte-light: #F0E8D8;
+  --latte-dark: #D4C8B0;
+  --slate: #5C6F7A;
+  --slate-light: #6B7B84;
+  --slate-dark: #4A5B64;
+}
+
+.dark {
+  --background: #2A3439;
+  --foreground: #E8E8E8;
+  --card: #343E44;
+  --card-foreground: #E8E8E8;
+  --popover: #343E44;
+  --popover-foreground: #E8E8E8;
+  --primary: #9CAF88;
+  --primary-foreground: #FFFFFF;
+  --secondary: #4A5B64;
+  --secondary-foreground: #E8E8E8;
+  --muted: #3E4A4F;
+  --muted-foreground: #A8B0B5;
+  --accent: #8FA883;
+  --accent-foreground: #FFFFFF;
+  --destructive: #D77A61;
+  --destructive-foreground: #FFFFFF;
+  --border: rgba(156, 175, 136, 0.2);
+  --input: #3E4A4F;
+  --ring: rgba(156, 175, 136, 0.4);
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --chart-1: #9CAF88;
+  --chart-2: #8FA883;
+  --chart-3: #E8DCC4;
+  --chart-4: #6B7B84;
+  --chart-5: #B8C5B4;
+  --sidebar: #343E44;
+  --sidebar-foreground: #E8E8E8;
+  --sidebar-primary: #9CAF88;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #3E4A4F;
+  --sidebar-accent-foreground: #E8E8E8;
+  --sidebar-border: rgba(156, 175, 136, 0.15);
+  --sidebar-ring: rgba(156, 175, 136, 0.4);
+
+  --sage-green: #9CAF88;
+  --sage-green-light: #B8C5B4;
+  --sage-green-dark: #8FA883;
+  --latte: #E8DCC4;
+  --latte-light: #F0E8D8;
+  --latte-dark: #D4C8B0;
+  --slate: #6B7B84;
+  --slate-light: #7A8B94;
+  --slate-dark: #5C6F7A;
+}
+
+body.vscode-light, body.vscode-dark, body.vscode-high-contrast {
+  --background: var(--vscode-editor-background);
+  --foreground: var(--vscode-editor-foreground);
+  --card: var(--vscode-sideBar-background);
+  --card-foreground: var(--vscode-sideBar-foreground);
+  --popover: var(--vscode-dropdown-background);
+  --popover-foreground: var(--vscode-dropdown-foreground);
+  --primary: var(--vscode-button-background);
+  --primary-foreground: var(--vscode-button-foreground);
+  --secondary: var(--vscode-button-secondaryBackground);
+  --secondary-foreground: var(--vscode-button-secondaryForeground);
+  --muted: var(--vscode-editorWidget-background);
+  --muted-foreground: var(--vscode-editorSuggestWidget-foreground);
+  --accent: var(--vscode-activityBar-activeBorder);
+  --accent-foreground: var(--vscode-activityBar-foreground);
+  --destructive: var(--vscode-errorForeground);
+  --destructive-foreground: var(--vscode-button-foreground);
+  --border: var(--vscode-widget-border);
+  --input: var(--vscode-input-background);
+  --input-background: var(--vscode-input-background);
+  --switch-background: var(--vscode-scrollbarSlider-background);
+  --ring: var(--vscode-focusBorder);
+  
+  --chart-1: var(--vscode-terminal-ansiGreen);
+  --chart-2: var(--vscode-terminal-ansiCyan);
+  --chart-3: var(--vscode-terminal-ansiYellow);
+  --chart-4: var(--vscode-terminal-ansiBlue);
+  --chart-5: var(--vscode-terminal-ansiMagenta);
+
+  --sidebar: var(--vscode-sideBar-background);
+  --sidebar-foreground: var(--vscode-sideBar-foreground);
+  --sidebar-primary: var(--vscode-button-background);
+  --sidebar-primary-foreground: var(--vscode-button-foreground);
+  --sidebar-accent: var(--vscode-list-hoverBackground);
+  --sidebar-accent-foreground: var(--vscode-list-hoverForeground);
+  --sidebar-border: var(--vscode-sideBar-border);
+  --sidebar-ring: var(--vscode-focusBorder);
+}
+
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /**
+  * Default typography styles for HTML elements (h1-h4, p, label, button, input).
+  * These are in @layer base, so Tailwind utility classes (like text-sm, text-lg) automatically override them.
+  */
+
+  html {
+    font-size: var(--font-size);
+  }
+
+  h1 {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: var(--text-xl);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h3 {
+    font-size: var(--text-lg);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h4 {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  label {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  button {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  input {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-normal);
+    line-height: 1.5;
+  }
+}
