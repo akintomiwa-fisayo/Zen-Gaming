@@ -1,3 +1,7 @@
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
+
 /**
  * PostCSS Configuration
  *
@@ -12,4 +16,4 @@
  *
  * Otherwise, you can leave this file empty.
  */
-export default {}
+export default {};  
